@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #131a9caa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #0d7896aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  border: 1px solid #ccc; /* Borde opcional */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background-image: url('https://img.wattpad.com/9800ffe727d1c5e7f37d37a0d587363dfb51a964/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4d5f4f56356750554a41774957773d3d2d3133312e313662643039663533646664393732663636383938383737303231352e6a7067?s=fit&w=720&h=720'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
